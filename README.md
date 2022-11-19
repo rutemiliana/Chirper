@@ -12,3 +12,7 @@
 10. php artisan serve
 11. npm run dev 
 12. create folder chirps and file index.blade
+13. update method store ChirpController
+14. add relationships in class User with Chirp
+15. add foreign id in the table chirps
+16. php artisan migrate
