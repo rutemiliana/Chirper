@@ -17,3 +17,5 @@
 15. add foreign id in the table chirps
 16. php artisan migrate
 17. create relationships in class Chirp with User.
+18. add routes edit and update in file web.php
+19. create file chirps/edit
