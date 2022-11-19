@@ -16,3 +16,4 @@
 14. add relationships in class User with Chirp
 15. add foreign id in the table chirps
 16. php artisan migrate
+17. create relationships in class Chirp with User.
