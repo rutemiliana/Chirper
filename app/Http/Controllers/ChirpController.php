@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Chirp;
 use Illuminate\Http\Request;
+use App\Http\Controllers\ChirpController;
 
 class ChirpController extends Controller
 {
@@ -67,7 +68,12 @@ class ChirpController extends Controller
      */
     public function edit(Chirp $chirp)
     {
-        //
+        //ChirpPolicy. metodo update
+       $this->authorize('update', $chirp);
+
+        return view('chirps.edit', [
+            'chirp'=> $chirp,
+        ]);
     }
 
     /**
