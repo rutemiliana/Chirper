@@ -20,3 +20,6 @@
 18. add routes edit and update in file web.php
 19. create file chirps/edit
 20. php artisan make:policy ChirpPolicy --model=Chirp
+21. update ChirpController for update and delete chirp
+22. php artisan make:notification NewChirp
+23. edit file Notifications/NewChirp(import model Chirp and Support str. Edit method __construct and toMail)
