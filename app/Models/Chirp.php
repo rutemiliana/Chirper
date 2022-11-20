@@ -14,8 +14,15 @@ class Chirp extends Model
         'message',
     ];
 
-    //relationship de chirp com usuario. Um chirp pertence a usuario
+    //Sempre que um novo Chirp for criado, o evento ChirpCreated será despachado.
+    protected $dispatchesEvent = [
+        'created' => ChirpCreated::class,
+    ];
+
+    //relacionamento de chirp com usuario. Um chirp pertence a usuario
     public function user(){
+
         return $this->belongsTo(User::class);
+
     }
 }

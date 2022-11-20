@@ -23,3 +23,5 @@
 21. update ChirpController for update and delete chirp
 22. php artisan make:notification NewChirp
 23. edit file Notifications/NewChirp(import model Chirp and Support str. Edit method __construct and toMail)
+24. php artisan make:event ChirpCreated
+25. 
